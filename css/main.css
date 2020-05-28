@@ -3,12 +3,20 @@
     padding: 0;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1600px;
+}
+
 header {
     height: 1082px;
     background: url("../img/Layer 96.png");
     background-repeat: no-repeat;
     background-position: inherit;
-    width: 1600px;
     position: relative;
 }
 
@@ -41,7 +49,7 @@ header {
 }
 
 .header-menu li a {
-    font-family: "Myriad Pro";
+    font-family: "Myriad Pro", sans-serif;
 }
 
 .header-menu li {
@@ -71,10 +79,10 @@ header hr {
     margin-top: 300px;
     height: 165px;
     text-align: center;
+    font-family: Gotham, sans-serif;
 }
 
 .headline h1 {
-    font-family: Gotham;
     color: #f5f5f5;
     font-size: 142px;
     font-weight: bold;
@@ -84,7 +92,6 @@ header hr {
 
 .headline p {
     line-height: 0;
-    font-family: Gotham;
     color: #11749e;
     font-size: 21.5px;
     font-weight: bold;
@@ -103,11 +110,36 @@ header hr {
     color: #d5d5d5;
     margin: 11px;
     font-size: 13px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
 }
 
 .header-scrolldown img {
     margin: 11px;
     width: 65px;
     height: 65px;
+}
+
+.first-line {
+    height: 738px;
+}
+
+.blue-font {
+    background-color: #11749e;
+    font-family: Gotham, sans-serif;
+    text-align: center;
+}
+
+.blue-font h2 {
+    height: 32px;
+}
+
+.blue-font p {
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.feature-article {
+    display: inline-block;
+    width: 290px;
+    margin: 10px;
 }
