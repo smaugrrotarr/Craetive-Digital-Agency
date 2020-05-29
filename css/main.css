@@ -123,7 +123,7 @@ header hr {
     height: 738px;
 }
 
-.blue-font {
+.blue-ground {
     background-color: #11749e;
     font-family: Gotham, sans-serif;
     text-align: center;
@@ -134,7 +134,7 @@ header hr {
 }
 
 .blue-font p {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-weight: bold;
 }
 
@@ -143,3 +143,9 @@ header hr {
     width: 290px;
     margin: 10px;
 }
+
+#BigW {
+    font-family: "Roboto Bold Condensed", sans-serif;
+    font-size: 176px;
+}
+
