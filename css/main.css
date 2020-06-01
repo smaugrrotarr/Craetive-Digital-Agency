@@ -17,135 +17,26 @@ header {
     background: url("../img/Layer 96.png");
     background-repeat: no-repeat;
     background-position: inherit;
-    position: relative;
 }
 
 .header-menu {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 116px;
-    margin-left: 425px;
-}
-
-.cs-image {
-    position: absolute;
     padding-top: 22px;
-    margin-left: 242px;
+    padding-bottom: 18px;
+    padding-left: 214px;
+    line-height: 75px;
 }
 
 .header-menu ul {
-    padding: 50px;
+    margin-left: 221px;
 }
 
-.header-menu li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    margin: 25px;
-}
-
-.header-menu .fa {
-}
-
-.header-menu li a {
-    font-family: "Myriad Pro", sans-serif;
-}
-
-.header-menu li {
-    list-style-type: none;
-    float: left;
-}
-
-.menu-link-active {
-    border-bottom: 5px solid #11749e;
-}
-
-.header-medias {
-    margin-left: 25px;
-}
-
-.header-medias .fa {
-    color: #f5f5f5;
-    margin-left: 12px;
-    margin-right: 12px;
-}
-
-header hr {
-    color: #8e8e8e;
-}
-
-.headline {
-    margin-top: 300px;
-    height: 165px;
-    text-align: center;
-    font-family: Gotham, sans-serif;
-}
-
-.headline h1 {
-    color: #f5f5f5;
-    font-size: 142px;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 0;
-}
-
-.headline p {
-    line-height: 0;
-    color: #11749e;
-    font-size: 21.5px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1em;
-    margin-top: 10px;
-}
-
-.header-scrolldown {
-    text-align: center;
-    height: 100px;
-    margin-top: 100px;
-}
-
-.header-scrolldown p {
-    color: #d5d5d5;
-    margin: 11px;
-    font-size: 13px;
-    font-family: "Open Sans", sans-serif;
-}
-
-.header-scrolldown img {
-    margin: 11px;
-    width: 65px;
-    height: 65px;
-}
-
-.first-line {
-    height: 738px;
-}
-
-.blue-ground {
-    background-color: #11749e;
-    font-family: Gotham, sans-serif;
-    text-align: center;
-}
-
-.blue-font h2 {
-    height: 32px;
-}
-
-.blue-font p {
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-}
-
-.feature-article {
+.header-medias li {
     display: inline-block;
-    width: 290px;
-    margin: 10px;
+    /*padding: 7px;*/
 }
 
-#BigW {
-    font-family: "Roboto Bold Condensed", sans-serif;
-    font-size: 176px;
+.header-medias a {
+    text-decoration: none;
+    color: white;
 }
-
