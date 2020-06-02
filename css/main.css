@@ -40,6 +40,11 @@ header {
     margin-left: 25px;
 }
 
+.menu-link-active {
+    padding-bottom: 40px;
+    border-bottom: 5px solid #11749e;
+}
+
 .fa {
     margin-left: 5px;
     margin-right: 5px;
@@ -53,19 +58,47 @@ header {
 .headline {
     text-align: center;
     text-transform: uppercase;
-    margin-top: 276px;
+    padding-top: 220px;
 }
 
 h1 {
     font-family: "Gotham", Bold, sans-serif;
     font-size: 152px;
+    line-height: 0;
     color: white;
 }
 
 .headline p {
     font-family: "Gotham", sans-serif;
     font-size: 25px;
+    line-height: 0;
+    font-weight: 500;
     letter-spacing: 0.8em;
     color: #11749e;
+}
 
+.header-scrolldown {
+    text-align: center;
+    margin: 140px;
+}
+
+.header-scrolldown p {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    margin: 12px;
+}
+
+.blue-ground {
+    background-color: #11749e;
+}
+
+.awesome-agency {
+    height: 738px;
+    text-align: center;
+}
+
+.awesome-agency h2 {
+    font-family: "Gotham", sans-serif;
+    font-size: 38px;
+    color: white;
 }
