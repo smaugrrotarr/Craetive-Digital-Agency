@@ -120,7 +120,7 @@ h1 {
     opacity: 25%;
     position: absolute;
     top: 30px;
-    left: 710px
+    left: 710px;
 }
 
 .feature-column {
@@ -206,4 +206,109 @@ h1 {
 
 .news-style p {
     font-size: 15px;
+}
+
+.blog-line {
+    text-align: center;
+    height: 1017
+}
+
+.fresh-summer-blog {
+    height: 613px;
+    margin: 0 214px;
+
+}
+
+.first-line {
+    position: relative;
+    height: 404px;
+}
+
+.first-line h2 {
+    font-family: "Gotham", sans-serif;
+    font-size: 38px;
+    line-height: 0;
+    padding-top: 165px;
+    padding-bottom: 115px;
+    text-transform: uppercase;
+}
+
+.background-B {
+    font-family: "Roboto", sans-serif;
+    font-size: 248px;
+    font-weight: bold;
+    color: #d7d7d7;
+    opacity: 30%;
+    position: absolute;
+    left: 710px;
+    top: 30px;
+
+}
+
+.clean-desing {
+    font-family: "Gotham", sans-serif;
+    font-size: 30px;
+
+}
+
+.fresh-summer-blog {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fresh-summer {
+    width: 270px;
+}
+
+.fresh-summer img {
+    margin-bottom: 30px;
+}
+
+.fresh-summer h3, .fresh-summer p {
+    margin: 15px 0;
+    font-family: "Gotham", sans-serif;
+}
+
+.fresh-summer h3 {
+    color: #11749e;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.fresh-summer p {
+    line-height: 28px;
+    overflow: hidden;
+    text-overflow: clip;
+    height: 140px;
+}
+
+.comment-point {
+    height: 355px;
+    display: flex;
+    vertical-align: center;
+    justify-content: space-around;
+    padding: 0 215px;
+}
+
+.comment-point-block {
+    vertical-align: center;
+}
+
+.comment-point-block p {
+    width: 475px;
+    font-family: "Gotham", sans-serif;
+    color: white;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 26px;
+    overflow: hidden;
+    text-overflow: clip;
+    height: 98px;
+    margin: 113px 0;
+
+}
+
+.comment-point-block img {
+    float: left;
+    margin: 10px 30px 0 0;
 }
