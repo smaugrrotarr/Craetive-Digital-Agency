@@ -5,10 +5,9 @@
 
 html, body {
     margin: 0;
+    margin-right: auto;
+    margin-left: auto;
     padding: 0;
-}
-
-body {
     width: 1600px;
 }
 
@@ -19,25 +18,32 @@ header {
     background-position: inherit;
 }
 
+
 .header-menu {
     display: flex;
     padding-top: 22px;
     padding-bottom: 18px;
     padding-left: 214px;
     padding-right: 200px;
-    line-height: 75px;
+    line-height: 20px;
 }
+
+/*.header-menu img {*/
+/*    height: 79px;*/
+/*    width: 75px;*/
+/*}*/
 
 .header-menu ul {
     margin-left: 195px;
     font-family: "Myriad Pro", sans-serif;
     font-size: 20px;
+    margin-top: 27px;
 }
 
 .header-medias li {
     display: inline-block;
-    margin-right: 25px;
-    margin-left: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .menu-link-active {
@@ -311,4 +317,218 @@ h1 {
 .comment-point-block img {
     float: left;
     margin: 10px 30px 0 0;
+}
+
+.akita-line {
+    height: 850px;
+    background: url("../img/Layer 87.png");
+    color: white;
+    display: flex;
+}
+
+.akita-line-text {
+    width: 50%;
+    font-family: "Gotham", sans-serif;
+    padding-left: 225px;
+    padding-top: 235px;
+}
+
+.akita-line-text h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.akita-line-paragraph {
+    font-size: 15px;
+    line-height: 25px;
+    width: 420px;
+    margin-top: 40px;
+    margin-bottom: 52px;
+    overflow: hidden;
+    text-overflow: clip;
+    height: 95px;
+}
+
+.akita-line-text div {
+    line-height: 38px;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: #11749e;
+    padding-left: 18px;
+    margin: 12px 0;
+}
+
+#blue-line-1 {
+    width: 371px;
+}
+
+#blue-line-2 {
+    width: 400px;
+}
+
+#blue-line-3 {
+    width: 428px;
+}
+
+.akita-line-img {
+    text-align: right;
+    width: 50%;
+    margin-top: 120px;
+    margin-right: 310px;
+}
+
+.team-line {
+    height: 945px;
+}
+
+.team-line-photos {
+    display: flex;
+    width: 1170px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: "Gotham", sans-serif;
+}
+
+.team-line-text {
+    position: relative;
+    font-family: "Gotham", sans-serif;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 140px;
+}
+
+.team-line-text h2 {
+    font-size: 38px;
+    text-transform: uppercase;
+}
+
+.background-t {
+    font-family: "Roboto", sans-serif;
+    color: gray;
+    position: absolute;
+    font-size: 248px;
+    opacity: 25%;
+    font-weight: 700;
+    top: -380px;
+    margin-left: 745px;
+}
+
+.team-line-sales {
+    font-size: 30px;
+    margin-top: 140px;
+    margin-bottom: 72px;
+}
+
+.team-own-portret {
+    position: relative;
+}
+
+.team-own-paragraph {
+    position: absolute;
+    background-color: white;
+    height: 77px;
+    width: 216px;
+    text-align: center;
+    margin-left: 28px;
+    top: 366px;
+}
+
+.team-own-paragraph h3 {
+    font-size: 20px;
+    color: #11749e;
+    line-height: 0;
+    margin-top: 36px;
+    margin-bottom: 14px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-own-paragraph p {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.taking-contacts {
+    height: 851px;
+    background: url("../img/Layer 97.png");
+    font-family: "Gotham", sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.taking-contacts-text {
+    height: 400px;
+    position: relative;
+}
+
+.taking-contacts-text h2 {
+    font-size: 37px;
+    text-transform: uppercase;
+    padding-top: 225px;
+}
+
+.taking-contacts-text p {
+    position: absolute;
+    font-family: "Roboto", sans-serif;
+    font-size: 248px;
+    opacity: 25%;
+    font-weight: 700;
+    margin-left: 745px;
+    top: 100px;
+}
+
+.place-holders {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
+
+input {
+    border: 1px solid white;
+    padding: 12px;
+    background: none;
+    width: 342px;
+    height: 23px;
+    margin: 14px;
+}
+
+#message-area {
+    width: 1142px;
+    height: 127px;
+}
+
+#submit-button {
+    width: 227px;
+    height: 64px;
+    border: none;
+    background-color: #11749e;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Gotham", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.road-map {
+    height: 331px;
+}
+
+footer {
+    height: 114px;
+    background-color: #222222;
+    color: white;
+}
+
+.footer-content {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 218px;
+    margin-right: 216px;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    line-height: 28px;
 }
