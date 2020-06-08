@@ -148,6 +148,10 @@ header {
     margin-left: 20px;
 }
 
+.header-menu a:hover {
+    color: #2e6da4;
+}
+
 .menu-link-active {
     padding-bottom: 40px;
     border-bottom: 5px solid #11749e;
