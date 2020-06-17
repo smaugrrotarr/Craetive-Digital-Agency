@@ -106,6 +106,8 @@
 .tk-myriad-pro-condensed { font-family: "myriad-pro-condensed",sans-serif; }
 .tk-myriad-pro { font-family: "myriad-pro",sans-serif; }
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -286,13 +288,13 @@ h1 {
 
 .image-news-1,
 .image-news-2 {
-    display: flex;
-    /*margin: 0 auto;*/
     overflow: hidden;
 }
 
 .image-news-1 img,
 .image-news-2 img {
+    margin: 0 auto;
+    object-fit: cover;
     width: 100%;
     height: 100%;
 }
@@ -552,7 +554,6 @@ input:focus {
 
 .image-map img {
     width: 100%;
-    height: 100%;
 }
 
 footer {
