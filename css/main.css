@@ -112,90 +112,110 @@
 }
 
 html, body {
-    margin: 0;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
     padding: 0;
-    width: 1600px;
+}
+
+header,
+.akita-line,
+.taking-contacts {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header,
+.header-medias a,
+.blue-ground,
+.akita-line,
+.taking-contacts,
+footer {
+    color: white;
+    text-align: center;
+}
+
+.headline p,
+.fresh-summer h3,
+.fresh-summer h3,
+.team-own-paragraph h3 {
+    color: #11749e;
 }
 
 header {
-    height: 1082px;
-    background: url("../img/Layer 96.png") no-repeat;
-    background-position: inherit;
+    background-image: url("../img/Layer 96.png");
 }
 
 
 .header-menu {
     display: flex;
-    padding-top: 22px;
-    padding-bottom: 18px;
-    padding-left: 214px;
-    padding-right: 200px;
-    line-height: 20px;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 22px 10px;
+    border-bottom: white solid 1px;
+}
+
+.header-menu img {
+    height: 100%;
 }
 
 .header-menu ul {
-    margin-left: 195px;
-    font-family: "Myriad Pro", sans-serif;
-    font-size: 20px;
-    margin-top: 27px;
+    display: inline-block;
+    margin: 20px 0;
 }
 
 .header-medias li {
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 20px;
     display: inline-block;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin: 0 20px;
 }
 
 .header-menu a:hover {
+    display: inline;
     color: #2e6da4;
+    padding-bottom: 46px;
+    border-bottom: 5px solid #11749e;
 }
 
 .menu-link-active {
-    padding-bottom: 40px;
+    padding-bottom: 46px;
     border-bottom: 5px solid #11749e;
 }
 
 .fa {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 0 5px
 }
 
 .header-medias a {
     text-decoration: none;
-    color: white;
 }
 
 .headline {
     text-align: center;
     text-transform: uppercase;
-    padding-top: 220px;
+    margin: 0 auto;
+    padding: 200px 0 0 0;
 }
 
 h1 {
     font-family: "Gotham-Bold", sans-serif;
     font-size: 152px;
-    line-height: 0;
-    color: white;
 }
 
 .headline p {
     font-family: "Gotham-Medium", sans-serif;
     font-size: 25px;
-    line-height: 0;
     font-weight: 500;
     letter-spacing: 0.8em;
-    color: #11749e;
 }
 
 .header-scrolldown {
     text-align: center;
-    margin: 140px;
+    padding: 140px;
 }
 
 .header-scrolldown p {
-    color: white;
     font-family: "OpenSans", sans-serif;
     margin: 12px;
 }
@@ -204,35 +224,30 @@ h1 {
     background-color: #11749e;
 }
 
-.awesome-agency {
-    height: 738px;
-    text-align: center;
-}
-
-.awesome-header {
-    height: 200px;
-    padding-top: 90px;
-    position: relative;
-}
-
-.awesome-header h2 {
-    font-family: "Gotham-Medium", sans-serif;
-    font-weight: 400;
-    font-size: 38px;
-    color: white;
-    text-transform: uppercase;
-    margin-top: 50px;
-}
-
-.awesome-header p {
+.big-letter {
     font-family: "Roboto-BoldCondensed", sans-serif;
     font-size: 248px;
     font-weight: bold;
-    color: white;
     opacity: 25%;
     position: absolute;
-    top: 30px;
-    left: 710px;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    height: 250px;
+}
+
+.big-header {
+    position: relative;
+    text-align: center;
+}
+
+.big-header h2 {
+    font-family: "Gotham-Medium", sans-serif;
+    font-weight: 400;
+    font-size: 38px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 175px 0 145px 0;
 }
 
 .feature-column {
@@ -240,15 +255,6 @@ h1 {
     justify-content: space-evenly;
     margin-left: 214px;
     margin-right: 214px;
-}
-
-.feature-article {
-    width: 290px;
-    color: white;
-}
-
-.feature-article img {
-    margin: 12px;
 }
 
 .feature-article h4 {
@@ -259,46 +265,40 @@ h1 {
     margin: 12px;
 }
 
-.feature-article p {
-    font-size: 15px;
-    font-family: "Gotham-Book", sans-serif;
-    margin: 22px;
+.feature-article,
+.fresh-summer {
+    padding: 22px;
+    margin-bottom: 15px;
+}
+
+.feature-article p,
+.fresh-summer p {
     overflow: hidden;
     text-overflow: clip;
-    height: 75px;
-    line-height: 25px;
+    height: 165px;
+    font-family: "Gotham-Book", sans-serif;
+    margin: 15px 0;
+}
+
+.feature-article p {
+    font-size: 15px;
 }
 
 .news-area {
-    height: 447px;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
 }
 
 .first-news {
     background-color: #222222;
+    padding: 70px 10%;
     color: white;
-    padding-left: 205px;
-    padding-top: 70px;
 }
 
 .second-news {
     background-color: #f3f3f3;
-    padding-left: 72px;
-    padding-top: 60px;
-}
-
-.news-image {
-    height: 447px;
-    display: flex;
-    vertical-align: center;
-}
-
-.news-image img {
-    width: 799px;
-}
-
-.news-style {
-    width: 799px;
+    padding: 70px 10%;
 }
 
 .news-style p, .news-style h3, .news-style h4 {
@@ -317,52 +317,20 @@ h1 {
     font-family: "Gotham-Book", sans-serif;
 }
 
-.news-style p {
+.news-style p,
+.comment-point-block p {
     font-size: 15px;
     font-family: "Gotham-Book", sans-serif;
 }
 
 .blog-line {
     text-align: center;
-    height: 1017px;
-}
-
-.fresh-summer-blog {
-    height: 613px;
-    margin: 0 214px;
-
-}
-
-.first-line {
-    position: relative;
-    height: 404px;
-}
-
-.first-line h2 {
-    font-family: "Gotham-Medium", sans-serif;
-    font-size: 38px;
-    line-height: 0;
-    padding-top: 165px;
-    padding-bottom: 115px;
-    text-transform: uppercase;
-}
-
-.background-B {
-    font-family: "Roboto-BoldCondensed", sans-serif;
-    font-size: 248px;
-    font-weight: bold;
-    color: #d7d7d7;
-    opacity: 30%;
-    position: absolute;
-    left: 710px;
-    top: 30px;
-
 }
 
 .clean-desing {
     font-family: "Gotham-Book", sans-serif;
     font-size: 30px;
-
+    margin: 20px;
 }
 
 .fresh-summer-blog {
@@ -370,57 +338,37 @@ h1 {
     justify-content: space-evenly;
 }
 
-.fresh-summer {
-    width: 270px;
-}
 
 .fresh-summer img {
     margin-bottom: 30px;
 }
 
-.fresh-summer h3, .fresh-summer p {
-    margin: 15px 0;
-}
 
 .fresh-summer h3 {
-    color: #11749e;
     text-transform: uppercase;
     font-size: 18px;
     font-family: "Gotham-Medium", sans-serif;
 }
 
 .fresh-summer p {
-    line-height: 28px;
-    overflow: hidden;
-    text-overflow: clip;
-    height: 140px;
-    font-family: "Gotham-Book", sans-serif;
+    max-width: 270px;
 }
 
 .comment-point {
-    height: 355px;
     display: flex;
     vertical-align: center;
     justify-content: space-around;
     padding: 0 215px;
 }
 
-.comment-point-block {
-    vertical-align: center;
-}
-
 .comment-point-block p {
-    width: 475px;
-    font-family: "Gotham-Book", sans-serif;
-    color: white;
+    width: 85%;
     font-weight: 100;
-    font-size: 15px;
     line-height: 26px;
     overflow: hidden;
     text-overflow: clip;
     height: 98px;
     margin: 113px 0;
-
 }
 
 .comment-point-block img {
@@ -429,16 +377,13 @@ h1 {
 }
 
 .akita-line {
-    height: 850px;
-    background: url("../img/Layer 87.png");
-    color: white;
+    background-image: url("../img/Layer 87.png");
     display: flex;
 }
 
 .akita-line-text {
-    width: 50%;
-    padding-left: 225px;
-    padding-top: 235px;
+    text-align: left;
+    padding: 235px 10% 235px;
 }
 
 .akita-line-text h3 {
@@ -482,59 +427,20 @@ h1 {
 }
 
 .akita-line-img {
-    text-align: right;
-    width: 50%;
     margin-top: 120px;
-    margin-right: 310px;
-}
-
-.team-line {
-    height: 945px;
 }
 
 .team-line-photos {
     display: flex;
-    width: 1170px;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 0 auto;
     text-align: center;
-    font-family: "Gotham-Medium", sans-serif;
-}
-
-.team-line-text {
-    position: relative;
-    font-weight: 100;
-    text-align: center;
-    margin-top: 140px;
-}
-
-.team-line-text h2 {
-    font-size: 38px;
-    text-transform: uppercase;
-    font-family: "Gotham-Medium", sans-serif;
-}
-
-.background-t {
-    font-family: "Roboto-BoldCondensed", sans-serif;
-    color: gray;
-    position: absolute;
-    font-size: 248px;
-    opacity: 25%;
-    font-weight: 700;
-    top: -120px;
-    margin-left: 745px;
-}
-
-.team-line-sales {
-    font-size: 30px;
-    margin-top: 140px;
-    margin-bottom: 72px;
-    font-family: "Gotham-Book", sans-serif;
 }
 
 .team-own-portret {
     position: relative;
+    margin-bottom: 125px;
 }
 
 .team-own-paragraph {
@@ -542,79 +448,54 @@ h1 {
     background-color: white;
     height: 77px;
     width: 216px;
-    text-align: center;
-    margin-left: 28px;
     top: 366px;
+    left: calc(50% - 108px);
     font-family: "Gotham-Medium", sans-serif;
 }
 
 .team-own-paragraph h3 {
     font-size: 20px;
-    color: #11749e;
-    line-height: 0;
-    margin-top: 36px;
-    margin-bottom: 14px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 36px auto 14px auto;
 }
 
 .team-own-paragraph p {
     font-size: 15px;
-    line-height: 24px;
     font-weight: 700;
 }
 
 .taking-contacts {
-    height: 851px;
-    background: url("../img/Layer 97.png");
-    color: white;
-    text-align: center;
-}
-
-.taking-contacts-text {
-    height: 400px;
-    position: relative;
-}
-
-.taking-contacts-text h2 {
-    font-size: 37px;
-    text-transform: uppercase;
-    padding-top: 225px;
-    font-family: "Gotham-Medium", sans-serif;
-}
-
-.taking-contacts-text p {
-    position: absolute;
-    font-family: "Roboto-BoldCondensed", sans-serif;
-    font-size: 248px;
-    opacity: 25%;
-    font-weight: 700;
-    margin-left: 745px;
-    top: 100px;
+    background-image: url("../img/Layer 97.png");
 }
 
 .place-holders {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1210px;
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 input {
     border: 1px solid white;
     padding: 12px;
     background: none;
-    width: 342px;
-    height: 23px;
-    margin: 14px;
-    color: white;
     font-family: "Gotham-Book", sans-serif;
     vertical-align: top;
+    margin: 15px 0;
+}
+
+.top-placeholders {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-placeholders input {
+    height: 30px;
 }
 
 #message-area {
-    width: 1142px;
-    height: 127px;
-    vertical-align: top;
+    min-height: 127px;
+    width: 100%;
 }
 
 #submit-button {
@@ -627,6 +508,7 @@ input {
     font-size: 24px;
     font-weight: 700;
     font-family: "Gotham-Medium", sans-serif;
+    margin: 50px;
 }
 
 #submit-button:focus {
@@ -642,22 +524,16 @@ input:focus {
 }
 
 .road-map {
-    height: 331px;
+    display: flex;
+    margin: 0 auto;
+
 }
 
 footer {
-    height: 114px;
     background-color: #222222;
-    color: white;
-}
-
-.footer-content {
-    padding-top: 40px;
+    margin: 0 auto;
+    padding: 30px 20px;
     display: flex;
-    justify-content: space-between;
-    margin-left: 218px;
-    margin-right: 216px;
     font-family: "Roboto-Regular", sans-serif;
     font-size: 13px;
-    line-height: 28px;
 }
