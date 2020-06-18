@@ -1,3 +1,8 @@
+window.onload = function () {
+    const loader = document.getElementById("loader");
+    setTimeout(() => loader.remove(), 500);
+}
+
 const anchors = document.querySelectorAll('.link_box a[href*="#"]')
 
 for (let anchor of anchors) {
