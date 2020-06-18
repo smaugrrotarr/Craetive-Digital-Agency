@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Title</title>
 </head>
 <body>
+<div class="load-background">
+<div class="load" id="loader">
+    <hr><hr><hr><hr>
+</div>
+</div>
+<main>
     <header>
         <div class="header-menu">
             <img class="cs-image" src="img/Rectangle-9-copy.png" alt="CS">
@@ -16,24 +22,25 @@
                 <ul class="link_box">
                     <li><a href="index.html" class="menu-link-active">Home</a></li>
                     <li><a href="#pages">Pages</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Extensions</a></li>
-                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#extension">Extensions</a></li>
+                    <li><a href="#tutorial">Tutorials</a></li>
                     <li><a href="#contacts">Contact us</a></li>
                 </ul>
                     <a href="#" class="fa fa-facebook"></a>
                     <a href="#" class="fa fa-twitter"></a>
                     <a href="#" class="fa fa-skype"></a>
                     <a href="#" class="fa fa-linkedin"></a>
+<!--                <a class="fa fa-bars fa-image-serif-3"></a>-->
             </div>
         </div>
         <div class="headline">
             <h1>Creatives</h1>
             <p>Power by PSDfreebies.com</p>
         </div>
-        <div class="header-scrolldown">
+        <div class="header-scrolldown link_box">
             <p>Scroll Down</p>
-            <a href="#scroll-down" class="link_box"><img src="img/Ellipse.png" alt="Ellipse"></a>
+            <a href="#scroll-down"><div class="scroll"></div></a>
         </div>
     </header>
     <div class="blue-ground" id="scroll-down">
@@ -43,30 +50,32 @@
                 <p>W</p>
             </div>
         </div>
-        <div class="feature-column">
+<!--        <div class="row">-->
+        <div class="feature-column" id="features">
             <div class="feature-article col-sm-2">
-                <img src="img/Write.png" alt="write">
+                <div class="fa-image-background fa fa-pencil-square fa-image-serif"></div>
                 <h4>Feature one</h4>
                 <p>Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec id elit non mi porta gravida at eget metus.</p>
             </div>
             <div class="feature-article col-sm-2">
-                <img src="img/Write.png" alt="write">
+                <div class="fa-image-background fa fa-pencil-square fa-image-serif"></div>
                 <h4>Feature two</h4>
                 <p>Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec id elit non mi porta gravida at eget metus.</p>
             </div>
             <div class="feature-article col-sm-2">
-                <img src="img/Search%20(and%20thou%20shall%20find).png" alt="search">
+                <div class="fa-image-background fa fa-search fa-image-serif"></div>
                 <h4>Feature three</h4>
                 <p>Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec id elit non mi porta gravida at eget metus.</p>
             </div>
             <div class="feature-article col-2">
-                <img src="img/Simon%20says.png" alt="Simon">
+                <div class="fa-image-background fa fa-comment-o fa-image-serif"></div>
                 <h4>Feature Four</h4>
                 <p>Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec id elit non mi porta gravida at eget metus.</p>
             </div>
         </div>
-    </div>
-    <div class="news-area">
+        </div>
+<!--    </div>-->
+    <div class="news-area row-cols-lg-1" id="pages">
         <div class="first-news news-style col-lg-6">
             <h4>Jan 4, 2016   |   In Culture</h4>
             <h3>Akita Inu Dog</h3>
@@ -74,7 +83,7 @@
         </div>
         <div class="col-lg-6 image-news-1"><img src="img/Layer%2088.png" alt="Layer"></div>
     </div>
-    <div class="news-area">
+    <div class="news-area row-cols-1">
         <div class="col-lg-6 image-news-2"><img src="img/Layer%2090.png" alt="Layer"></div>
         <div class="second-news news-style col-lg-6">
             <h4>Jan 4, 2016   |   In Culture</h4>
@@ -82,14 +91,14 @@
             <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. <br><br>Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur</p>
         </div>
     </div>
-    <div class="big-header">
+    <div class="big-header" id="extension">
         <h2>Let's blog</h2>
         <div class="big-letter">
             <p>B</p>
         </div>
         <p class="clean-desing">We love clean design and advanced digital solutions.</p>
     </div>
-    <div class="fresh-summer-blog">
+    <div class="fresh-summer-blog row-cols-4">
         <div class="fresh-summer col-sm-2">
             <img src="img/Layer%2083.png" alt="Layer">
             <h3>Fresh Summer Campaign</h3>
@@ -117,15 +126,15 @@
     </div>
     <div class="blue-ground comment-point">
         <div class="comment-point-block col-md-6">
-            <p><img src="img/Write%20copy%202.png" alt="Write">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-                Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis.</p>
+            <p><span class="fa fa-pencil-square fa-image-serif-2"></span>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+            Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis.</p>
         </div>
         <div class="comment-point-block col-md-6">
-            <p><img src="img/Write%20copy%202.png" alt="Write">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+            <p><span class="fa fa-pencil-square fa-image-serif-2"></span>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
                 Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis.</p>
         </div>
     </div>
-    <div class="akita-line">
+    <div class="akita-line" id="tutorial">
         <div class="akita-line-text col-lg-6">
             <h3>Akita Inu Dog</h3>
             <p class="akita-line-paragraph">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
@@ -173,8 +182,7 @@
             </div>
         </div>
     </div>
-    <div class="taking-contacts">
-        <a name="contacts"></a>
+    <div class="taking-contacts" id="contacts">
         <div class="big-header">
             <h2>We’d love to hear about your project.</h2>
             <div class="big-letter">
@@ -204,6 +212,7 @@
                 <img src="img/Layer%2077.png" alt="Layer">
             </div>
     </footer>
+</main>
     <script rel="script" src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

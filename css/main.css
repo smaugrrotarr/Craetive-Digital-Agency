@@ -106,7 +106,17 @@
 .tk-myriad-pro-condensed { font-family: "myriad-pro-condensed",sans-serif; }
 .tk-myriad-pro { font-family: "myriad-pro",sans-serif; }
 
-
+/*@media (max-width: 925px) {*/
+/*    .header-medias {*/
+/*        display: none;*/
+/*    }*/
+/*    .fa-image-serif-3 {*/
+/*        display: block;*/
+/*    }*/
+/*    h1 {*/
+/*        font-size: 110px;*/
+/*    }*/
+/*}*/
 
 * {
     margin: 0;
@@ -116,6 +126,10 @@
 html, body {
     margin: 0 auto;
     padding: 0;
+}
+
+main {
+    /*visibility: hidden;*/
 }
 
 header,
@@ -141,6 +155,30 @@ footer {
 .fresh-summer h3,
 .team-own-paragraph h3 {
     color: #11749e;
+}
+
+.fa-image-serif {
+    font-size: 45px;
+    margin: auto 0;
+}
+
+.fa-image-serif-2 {
+    font-size: 68px;
+    line-height: 1.5em;
+}
+
+.fa-image-serif-3 {
+    font-size: 36px;
+    display: none;
+}
+
+.fa-image-background {
+    height: 133px;
+    width: 133px;
+    border-radius: 50%;
+    background-color: #2e85aa;
+    padding-top: 48px;
+    margin: 0 auto;
 }
 
 header {
@@ -255,22 +293,24 @@ h1 {
 .feature-column {
     display: flex;
     justify-content: space-evenly;
-    margin-left: 214px;
-    margin-right: 214px;
+    /*margin-left: 214px;*/
+    /*margin-right: 214px;*/
 }
 
 .feature-article h4 {
     font-family: "Gotham-Medium", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
     margin: 12px;
+    min-width: 150px;
 }
 
 .feature-article,
 .fresh-summer {
     padding: 22px;
     margin-bottom: 15px;
+    min-width: 200px;
 }
 
 .feature-article p,
@@ -280,6 +320,8 @@ h1 {
     height: 7.5em;
     font-family: "Gotham-Book", sans-serif;
     margin: 15px 0;
+    text-align: justify;
+
 }
 
 .feature-article p {
@@ -289,14 +331,16 @@ h1 {
 .image-news-1,
 .image-news-2 {
     overflow: hidden;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .image-news-1 img,
 .image-news-2 img {
-    margin: 0 auto;
     object-fit: cover;
     width: 100%;
     height: 100%;
+    padding-left: 0;
 }
 
 .image-news-1 {
@@ -309,8 +353,12 @@ h1 {
 
 .news-area {
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     display: flex;
+}
+
+.image-news-1,
+.image-news-2{
 }
 
 .first-news {
@@ -324,9 +372,13 @@ h1 {
     padding: 70px 10%;
 }
 
+
 .news-style p, .news-style h3, .news-style h4 {
     padding: 10px;
-    width: 480px;
+}
+
+.news-style p {
+    max-width: 85%;
 }
 
 .news-style h4 {
@@ -344,6 +396,7 @@ h1 {
 .comment-point-block p {
     font-size: 15px;
     font-family: "Gotham-Book", sans-serif;
+    text-align: left;
 }
 
 .blog-line {
@@ -384,6 +437,10 @@ h1 {
     padding: 0 215px;
 }
 
+.comment-point-block {
+    display: inline;
+}
+
 .comment-point-block p {
     width: 85%;
     font-weight: 100;
@@ -394,7 +451,7 @@ h1 {
     margin: 113px 0;
 }
 
-.comment-point-block img {
+.comment-point-block span {
     float: left;
     margin: 10px 30px 0 0;
 }
@@ -563,4 +620,119 @@ footer {
     display: flex;
     font-family: "Roboto-Regular", sans-serif;
     font-size: 13px;
+}
+
+.scroll {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    animation: down 1.5s infinite;
+    -webkit-animation: down 1.5s infinite;
+    margin: 0 auto;
+}
+
+.scroll::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    width: 18px;
+    height: 18px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(-45deg);
+}
+
+@keyframes down {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translateY(15px);
+    }
+
+    40% {
+        transform: translate(0);
+    }
+}
+
+@-webkit-keyframes down {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translateY(15px);
+    }
+
+    40% {
+        transform: translate(0);
+    }
+}
+
+.load-background {
+    z-index: 1;
+    background-color: #2e6da4;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.load {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    /*change these sizes to fit into your project*/
+    width: 100px;
+    height: 100px;
+    display: unset;
+}
+
+.load hr {
+    border: 0;
+    margin: 0;
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    border-radius: 50%;
+    animation: spin 2s ease infinite
+}
+
+.load :first-child {
+    background: #19A68C;
+    animation-delay: -1.5s
+}
+
+.load :nth-child(2) {
+    background: #F63D3A;
+    animation-delay: -1s
+}
+
+.load :nth-child(3) {
+    background: #FDA543;
+    animation-delay: -0.5s
+}
+
+.load :last-child {
+    background: #193B48
+}
+
+@keyframes spin {
+    0%, 100% {
+        transform: translate(0)
+    }
+    25% {
+        transform: translate(160%)
+    }
+    50% {
+        transform: translate(160%, 160%)
+    }
+    75% {
+        transform: translate(0, 160%)
+    }
 }
