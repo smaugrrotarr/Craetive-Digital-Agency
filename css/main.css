@@ -106,18 +106,6 @@
 .tk-myriad-pro-condensed { font-family: "myriad-pro-condensed",sans-serif; }
 .tk-myriad-pro { font-family: "myriad-pro",sans-serif; }
 
-/*@media (max-width: 925px) {*/
-/*    .header-medias {*/
-/*        display: none;*/
-/*    }*/
-/*    .fa-image-serif-3 {*/
-/*        display: block;*/
-/*    }*/
-/*    h1 {*/
-/*        font-size: 110px;*/
-/*    }*/
-/*}*/
-
 * {
     margin: 0;
     padding: 0;
@@ -126,7 +114,7 @@
 html, body {
     margin: 0 auto;
     padding: 0;
-/*     overflow: hidden; */
+    overflow-x: hidden;
 }
 
 header,
@@ -734,3 +722,14 @@ footer {
     }
 }
 
+@media (max-width: 925px) {
+    .header-menu {
+        display: none;
+    }
+    .fa-image-serif-3 {
+        display: block;
+    }
+    h1 {
+        font-size: 110px;
+    }
+}
