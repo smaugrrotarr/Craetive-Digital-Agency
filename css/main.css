@@ -735,38 +735,20 @@ footer {
     }
 }
 
-@media(max-width: 925px) {
-    body {
-        overflow-x: hidden;
-    }
-    .header-menu {
-        justify-content: space-between;
-    }
-    .header-menu {
-        flex-direction: row;
-    }
-    .fa-navicon {
-        display: block;
-    }
-    h1 {
-        font-size: 56px;
-    }
-
-    .headline p {
-    font-size: 14px;
-    }
-}
+@media (max-width: 925px) {
+    body {overflow-x: hidden;}
+    .header-menu {justify-content: space-between;}
+    .header-menu {flex-direction: row;}
+    .fa-navicon {display: block;}
+    h1 {font-size: 56px;}
+    .headline p {font-size: 14px;}
     .big-letter {
         font-size: 180px;
         height: 190px;
         top: 65px;
     }
-    .big-header {
-        font-size: 24px;
-    }
-    .news-area {
-        flex-wrap: wrap;
-    }
+    .big-header {font-size: 24px;}
+    .news-area {flex-wrap: wrap;}
     .akita-line-img{
         margin: 0;
         padding: 0 20px;
