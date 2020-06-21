@@ -735,7 +735,7 @@ footer {
     }
 }
 
-@media handheld and (max-width: 925px) {
+@media(max-width: 925px) {
     body {
         overflow-x: hidden;
     }
