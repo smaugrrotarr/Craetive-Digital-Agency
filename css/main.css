@@ -106,6 +106,8 @@
 .tk-myriad-pro-condensed { font-family: "myriad-pro-condensed",sans-serif; }
 .tk-myriad-pro { font-family: "myriad-pro",sans-serif; }
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -114,7 +116,7 @@
 html, body {
     margin: 0 auto;
     padding: 0;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 header,
@@ -152,11 +154,6 @@ footer {
     line-height: 1.5em;
 }
 
-.fa-image-serif-3 {
-    font-size: 36px;
-    display: none;
-}
-
 .fa-image-background {
     height: 133px;
     width: 133px;
@@ -170,6 +167,13 @@ header {
     background-image: url("../img/Layer 96.png");
 }
 
+.fa-navicon {
+    color: white;
+    font-size: 48px;
+    display: none;
+    padding: 22px;
+
+}
 
 .header-menu {
     display: flex;
@@ -278,6 +282,7 @@ h1 {
 .feature-column {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     /*margin-left: 214px;*/
     /*margin-right: 214px;*/
 }
@@ -294,7 +299,7 @@ h1 {
 .feature-article,
 .fresh-summer {
     padding: 22px;
-    margin-bottom: 15px;
+    margin: 30px;
     min-width: 200px;
 }
 
@@ -325,7 +330,6 @@ h1 {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    padding-left: 0;
 }
 
 .image-news-1 {
@@ -342,10 +346,6 @@ h1 {
     display: flex;
 }
 
-.image-news-1,
-.image-news-2{
-}
-
 .first-news {
     background-color: #222222;
     padding: 70px 10%;
@@ -356,7 +356,6 @@ h1 {
     background-color: #f3f3f3;
     padding: 70px 10%;
 }
-
 
 .news-style p, .news-style h3, .news-style h4 {
     padding: 10px;
@@ -396,7 +395,10 @@ h1 {
 
 .fresh-summer-blog {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto;
 }
 
 
@@ -417,6 +419,7 @@ h1 {
 
 .comment-point {
     display: flex;
+    flex-wrap: wrap;
     vertical-align: center;
     justify-content: space-around;
     padding: 0 215px;
@@ -424,16 +427,18 @@ h1 {
 
 .comment-point-block {
     display: inline;
+    min-width: 300px;
+    max-width: 700px;
 }
 
 .comment-point-block p {
-    width: 85%;
+    width: 90%;
     font-weight: 100;
-    line-height: 26px;
+    line-height: 1.5em;
     overflow: hidden;
     text-overflow: clip;
-    height: 98px;
-    margin: 113px 0;
+    height: 7.5em;
+    margin: 60px 0;
 }
 
 .comment-point-block span {
@@ -444,11 +449,13 @@ h1 {
 .akita-line {
     background-image: url("../img/Layer 87.png");
     display: flex;
+    flex-wrap: wrap;
 }
 
 .akita-line-text {
     text-align: left;
     padding: 235px 10% 235px;
+    min-width: 300px;
 }
 
 .akita-line-text h3 {
@@ -460,7 +467,7 @@ h1 {
 .akita-line-paragraph {
     font-size: 15px;
     line-height: 25px;
-    width: 420px;
+    width: content-box;
     margin-top: 40px;
     margin-bottom: 52px;
     overflow: hidden;
@@ -480,32 +487,37 @@ h1 {
 }
 
 #blue-line-1 {
-    width: 371px;
+    max-width: 371px;
 }
 
 #blue-line-2 {
-    width: 400px;
+    max-width: 400px;
 }
 
 #blue-line-3 {
-    width: 428px;
+    max-width: 428px;
 }
 
 .akita-line-img {
-    margin-top: 120px;
+    margin: 120px auto;
+    min-width: content-box;
 }
 
 .team-line-photos {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: space-evenly;
-    margin: 0 auto;
+    margin: 0 auto 100px auto;
     text-align: center;
 }
 
 .team-own-portret {
     position: relative;
-    margin-bottom: 125px;
+    margin: 25px 50px;
+    padding: 25px 0;
+    min-width: content-box;
+
 }
 
 .team-own-paragraph {
@@ -551,6 +563,7 @@ input {
 
 .top-placeholders {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -660,7 +673,7 @@ footer {
 
 .visiblePage {
     width: 100%;
-    height: 10000px;
+    height: 1000px;
     z-index: 10;
     background-color: #6f42c1;
     background-size: cover;
@@ -723,13 +736,43 @@ footer {
 }
 
 @media handheld and (max-width: 925px) {
-    .header-menu {
-        display: none;
+    body {
+        overflow-x: hidden;
     }
-    .fa-image-serif-3 {
+    .header-menu {
+        justify-content: space-between;
+    }
+    .header-menu {
+        flex-direction: row;
+    }
+    .fa-navicon {
         display: block;
     }
     h1 {
-        font-size: 110px;
+        font-size: 56px;
+    }
+
+    .headline p {
+    font-size: 14px;
+    }
+}
+    .big-letter {
+        font-size: 180px;
+        height: 190px;
+        top: 65px;
+    }
+    .big-header {
+        font-size: 24px;
+    }
+    .news-area {
+        flex-wrap: wrap;
+    }
+    .akita-line-img{
+        margin: 0;
+        padding: 0 20px;
+    }
+    .akita-line-img img {
+        max-width: 290px;
+        margin: 0 auto;
     }
 }
