@@ -19,8 +19,8 @@
     <header>
         <div class="header-menu">
             <img class="cs-image" src="img/Rectangle-9-copy.png" alt="CS">
-            <div class="header-medias">
-                <ul class="link_box">
+            <div class="header-medias" id="myDropdown">
+                <ul class="link-box">
                     <li><a href="index.html" class="menu-link-active">Home</a></li>
                     <li><a href="#pages">Pages</a></li>
                     <li><a href="#features">Features</a></li>
@@ -28,12 +28,14 @@
                     <li><a href="#tutorial">Tutorials</a></li>
                     <li><a href="#contacts">Contact us</a></li>
                 </ul>
+                <div class="link-box">
                     <a href="#" class="fa fa-facebook"></a>
                     <a href="#" class="fa fa-twitter"></a>
                     <a href="#" class="fa fa-skype"></a>
                     <a href="#" class="fa fa-linkedin"></a>
+                </div>
             </div>
-            <a href="#"><div class="fa fa-navicon"></div></a>
+            <a href="#" onclick="myFunction()"><div class="fa fa-navicon dropbtn"></div></a>
         </div>
         <div class="headline">
             <h1>Creatives</h1>
@@ -51,7 +53,6 @@
                 <p>W</p>
             </div>
         </div>
-<!--        <div class="row">-->
         <div class="feature-column row-cols-4" id="features">
             <div class="feature-article col-sm-2">
                 <div class="fa-image-background fa fa-pencil-square fa-image-serif"></div>
@@ -74,7 +75,6 @@
                 <p>Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec id elit non mi porta gravida at eget metus.</p>
             </div>
         </div>
-<!--        </div>-->
     </div>
     <div class="news-area" id="pages">
         <div class="first-news news-style">
